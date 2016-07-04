@@ -52,6 +52,10 @@
   font-family: 'H5PFontAwesome4';
   color: #255c41;
 }
+.h5p-blanks .h5p-correct:after{
+  right: auto;
+  left: 0.5em;
+}
 
 /* Wrongly answered input */
 .h5p-blanks .h5p-wrong .h5p-text-input {
@@ -69,6 +73,10 @@
   content: "\f00d";
   color: #b71c1c;
 }
+.h5p-blanks .h5p-wrong:after{
+  right: auto;
+  left: 0.5em;
+}
 
 /* Actual text paragraphs */
 .h5p-blanks .h5p-question-content p {
@@ -82,14 +90,30 @@
   top: 0;
   right: 0;
 }
+.dir-rtl .h5p-blanks .joubel-tip-container {
+}
 .h5p-blanks .has-tip .h5p-text-input {
   padding-right: 2.25em;
+}
+.dir-rtl .h5p-blanks .has-tip .h5p-text-input {
+  padding-right: initial;
+  padding-left: 2.25em;
 }
 .h5p-blanks .has-tip.h5p-correct:after,
 .h5p-blanks .has-tip.h5p-wrong:after {
   right: 2.25em;
 }
+.dir-rtl .h5p-blanks .has-tip.h5p-correct:after,
+.dir-rtl .h5p-blanks .has-tip.h5p-wrong:after {
+  right: auto;
+  left: 2.25em;
+}
 .h5p-blanks .has-tip.h5p-correct .h5p-text-input,
 .h5p-blanks .has-tip.h5p-wrong .h5p-text-input {
   padding-right: 3.5em;
+}
+.dir-rtl .h5p-blanks .has-tip.h5p-correct .h5p-text-input,
+.dir-rtl .h5p-blanks .has-tip.h5p-wrong .h5p-text-input {
+  padding-right: initial;
+  padding-left: 3.5em;
 }
